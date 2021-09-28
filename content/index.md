@@ -1,15 +1,12 @@
 ---
-title: Great coffee with a conscience
+title: experimental art for the masses
 image: /img/home-jumbotron.jpg
-heading: Great coffee with a conscience
+heading: experimental art for the masses
 subheading: Support sustainable farming while enjoying a cup
 mainpitch:
-  title: Why Kaldi
+  title: what is strangehome
   description: >
-    Kaldi is the coffee store for everyone who believes that great coffee
-    shouldn't just taste good, it should do good too. We source all of our beans
-    directly from small scale sustainable farmers and make sure part of the
-    profits are reinvested in their communities.
+    strangehome is experimental art for the masses.
 description: >-
   Kaldi is the ultimate spot for coffee lovers who want to learn about their
   java’s origin and support the farmers that grew it. We take coffee production,

@@ -1,5 +1,10 @@
 <template>
   <div>
+    <Hero
+      :heading="page.heading"
+      :subheading="page.subheading"
+      :image="page.image"
+    />
     <div class="flex flex-col">
       <div v-for="(post, tags, index) in posts" :key="index">
         <nuxt-link :to="`/blog/${post.slug}`" class="px-4 py-4 relative block">

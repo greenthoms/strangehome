@@ -1,25 +1,21 @@
 <template>
   <div>
-    <div
-      class="px-8 mx-auto mt-12 prose sm:px-6 md:px-4 lg:px-2 xl:px-0 xl:prose-xl lg:prose-lg md:prose-md"
-    >
-      <h1>Latest Stories</h1>
-      <div class="lg:grid lg:grid-cols-2 lg:gap-8">
-        <div
-          v-for="(post, index) in posts"
-          :key="index"
-          class="px-6 border rounded-lg shadow"
-        >
-          <h3>
-            <nuxt-link :to="`/blog/${post.slug}`">{{ post.title }}</nuxt-link>
-          </h3>
-          <p>
-            {{ post.description }}
-          </p>
-          <p>
-            <nuxt-link :to="`/blog/${post.slug}`">Read more</nuxt-link>
-          </p>
-        </div>
+    <div class="flex flex-col">
+      <div v-for="(post, tags, index) in posts" :key="index">
+        <nuxt-link :to="`/blog/${post.slug}`" class="px-4 py-4 relative block">
+          <span class="underline">{{ post.title }}</span>
+          <div class="flex flex-row flex-wrap text-xs">
+            <div class="bg-gray-100 px-1 mr-1 border">
+              {{ post.tags[0] }}
+            </div>
+            <div class="bg-gray-100 px-1 mr-1 border">
+              {{ post.tags[1] }}
+            </div>
+            <div class="bg-gray-100 px-1 mr-1 border">
+              {{ post.tags[2] }}
+            </div>
+          </div>
+        </nuxt-link>
       </div>
     </div>
   </div>

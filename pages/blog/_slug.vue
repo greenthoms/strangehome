@@ -1,7 +1,7 @@
 <template>
-  <div
-    class="px-8 mx-auto mt-12 prose sm:px-6 md:px-4 lg:px-2 xl:px-0 xl:prose-xl lg:prose-lg md:prose-md"
-  >
+  <div class="px-4 prose w-screen">
+    <nuxt-link to="/blog"><small>⇠ Back to index</small></nuxt-link>
+
     <h2>{{ post.title }}</h2>
     <p>{{ post.description }}</p>
     <nuxt-content :document="post" />
@@ -13,6 +13,7 @@
         </nuxt-link>
       </li>
     </ul>
+    <nuxt-link to="/blog"><small>⇠ Back to index</small></nuxt-link>
   </div>
 </template>
 
