@@ -1,6 +1,6 @@
 ---
 title: 'Random notes'
-date: 2021-01-04T15:04:10.000Z
+date: 2021-09-27T15:04:10.000Z
 description: >-
   Random notes
 tags:

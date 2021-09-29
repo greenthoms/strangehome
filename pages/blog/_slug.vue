@@ -1,6 +1,6 @@
 <template>
   <div class="px-4 prose w-screen">
-    <nuxt-link to="/blog"><small>⇠ Back to index</small></nuxt-link>
+    <nuxt-link to="/"><small>⇠ Back to index</small></nuxt-link>
 
     <h2>{{ post.title }}</h2>
     <p>{{ post.description }}</p>
@@ -13,7 +13,7 @@
         </nuxt-link>
       </li>
     </ul>
-    <nuxt-link to="/blog"><small>⇠ Back to index</small></nuxt-link>
+    <nuxt-link to="/"><small>⇠ Back to index</small></nuxt-link>
   </div>
 </template>
 
