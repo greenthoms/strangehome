@@ -23,9 +23,13 @@
 
 <script>
 export default {
+  name: 'BlogList',
   async asyncData({ $content }) {
+    const page = await $content('index').fetch()
     const posts = await $content('blog').fetch()
+
     return {
+      page,
       posts,
     }
   },

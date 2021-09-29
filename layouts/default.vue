@@ -1,8 +1,8 @@
 <template>
-  <div class="flex flex-col justify-start h-screen">
+  <div class="flex flex-col justify-between h-screen">
     <Header />
     <Nuxt />
-    <!-- <Footer /> -->
+    <Footer />
   </div>
 </template>
 
