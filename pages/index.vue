@@ -1,17 +1,18 @@
 <template>
   <div>
-    <div class="flex flex-col">
-      <div v-for="(post, tags, tag, index) in posts" :key="index">
-        <nuxt-link
-          :to="`/blog/${post.slug}`"
-          class="my-1 mx-4 px-4 py-4 relative block bg-purple-100 hover:bg-purple-300 focus:outline-none focus:ring-2 focus:ring-purple-600 focus:ring-opacity-50"
-        >
+    <div class="flex flex-row flex-wrap gap-4 m-4">
+      <div
+        v-for="(post, tags, tag, index) in posts"
+        :key="index"
+        class="font-semibold rounded-lg shadow-md text-white bg-green-500 hover:bg-green-700"
+      >
+        <nuxt-link :to="`/blog/${post.slug}`" class="p-4 relative block">
           <span class="underline">{{ post.title }}</span>
           <div class="flex flex-wrap">
             <div
               v-for="(tag, index) in post.tags"
               :key="index"
-              class="text-xs mr-1 px-1 border light-blue-400"
+              class="text-xs mr-1 px-1 bg-green-600"
             >
               {{ tag }}
             </div>
@@ -35,3 +36,12 @@ export default {
   },
 }
 </script>
+
+<style>
+a:focus-visible {
+  outline: -webkit-focus-ring-color auto 4px;
+  outline-color: green;
+  outline-style: auto;
+  outline-width: 4px;
+}
+</style>
