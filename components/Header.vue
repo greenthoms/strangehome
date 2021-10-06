@@ -1,14 +1,10 @@
 <template>
   <div class="">
-    <nuxt-link to="/" class="flex site-name"> strangehome </nuxt-link>
+    <nuxt-link
+      to="/"
+      class="p-3 flex site-name text-white bg-green-500 hover:bg-green-700"
+      >strangehome</nuxt-link
+    >
     <blog></blog>
   </div>
 </template>
-
-<style scoped>
-.site-name {
-  color: brown;
-  padding: 1em;
-  font-weight: 500;
-}
-</style>
