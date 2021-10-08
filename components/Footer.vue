@@ -1,5 +1,5 @@
 <template>
-  <footer class="flex flex-wrap m-4 gap-4">
+  <footer class="flex flex-wrap p-4 mt-8 gap-4">
     <a
       href="https://www.are.na/strange-home"
       target="_blank"

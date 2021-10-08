@@ -5,14 +5,12 @@
         <nuxt-link :to="`/blog/${post.slug}`" class="px-4 py-4 relative block">
           <span class="underline">{{ post.title }}</span>
           <div class="flex flex-row flex-wrap text-xs">
-            <div class="bg-gray-100 px-1 mr-1 border">
-              {{ post.tags[0] }}
-            </div>
-            <div class="bg-gray-100 px-1 mr-1 border">
-              {{ post.tags[1] }}
-            </div>
-            <div class="bg-gray-100 px-1 mr-1 border">
-              {{ post.tags[2] }}
+            <div
+              v-for="(tag, index) in post.tags"
+              :key="index"
+              class="text-xs mr-1 px-1 bg-green-600"
+            >
+              {{ tag }}
             </div>
           </div>
         </nuxt-link>

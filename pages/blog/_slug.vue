@@ -1,7 +1,7 @@
 <template>
-  <div>
+  <div class="flex flex-col justify-between h-full flex-1">
     <nuxt-link to="/" class="btn btn-green">⇠ Go back</nuxt-link>
-    <div class="p-4 my-4 prose w-screen">
+    <div class="p-4 my-4 prose w-screen flex-1">
       <h2>{{ post.title }}</h2>
       <p>{{ post.description }}</p>
       <nuxt-content :document="post" />
@@ -24,6 +24,7 @@
 }
 .btn-green {
   @apply text-white bg-green-500;
+  align-self: self-start;
 }
 </style>
 
