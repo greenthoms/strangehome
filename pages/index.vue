@@ -4,7 +4,7 @@
       <div
         v-for="(post, tags, tag, index) in posts"
         :key="index"
-        class="font-semibold rounded-lg shadow-md text-white bg-green-500 hover:bg-green-700"
+        class="font-semibold rounded-lg shadow-md text-white bg-purple-700 hover:bg-purple-900"
       >
         <nuxt-link :to="`/blog/${post.slug}`" class="p-4 relative block">
           <span class="underline">{{ post.title }}</span>
@@ -12,7 +12,7 @@
             <div
               v-for="(tag, index) in post.tags"
               :key="index"
-              class="text-xs mr-1 px-1 bg-green-600"
+              class="text-xs mr-1 px-1 bg-purple-900"
             >
               {{ tag }}
             </div>

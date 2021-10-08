@@ -2,7 +2,7 @@
   <div class="">
     <nuxt-link
       to="/"
-      class="p-3 flex site-name text-white bg-green-500 hover:bg-green-700"
+      class="p-3 flex site-name text-white bg-purple-800 hover:bg-purple-900"
       >strangehome</nuxt-link
     >
     <blog></blog>
